@@ -7,8 +7,8 @@ const Signin = () =>{
             <div className={styles.container_body}>
                 <div className={styles.body_left}>
                     <div className={styles.image_container}>
-                        <img src="/leftIphoneImage.png" alt="left_iphone_image" />
-                        <img src="/rightIphoneImage.png" alt="right_iphone_image" />
+                        <img className={styles.image1} src="/leftIphoneImage.png" alt="left_iphone_image" />
+                        <img className={styles.image2} src="/rightIphoneImage.png" alt="right_iphone_image" />
                     </div>
                 </div>
                 <div className={styles.body_right}>
