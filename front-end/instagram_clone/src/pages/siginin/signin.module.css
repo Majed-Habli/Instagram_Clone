@@ -100,6 +100,7 @@
     font-weight: 600;
     margin-top: 10px;
     background-color: #4CB5F9;
+    cursor: pointer;
 }
 
 .seperator{
@@ -121,7 +122,6 @@
 .interactables{
     width: 100%;
     padding: 1.2rem 0;
-    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
@@ -156,4 +156,32 @@
 .bottom_container span{
     color: #4CB5F9;
     font-weight: 500;
+    cursor: pointer;
+}
+
+.cta{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+    font-size: 15px;
+}
+
+.cta_images{
+    display: flex;
+    column-gap: 10px;
+}
+
+.cta1{
+    width: 135px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.cta2{
+    width: 110px;
+    height: 40px;
+    cursor: pointer;
 }

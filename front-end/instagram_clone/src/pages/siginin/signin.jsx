@@ -41,8 +41,8 @@ const Signin = () =>{
                     <div className={styles.cta}>
                         <div>Get the app</div>
                         <div className={styles.cta_images}>
-                            <img src="/get_on_playstore.png" alt="get_on_playstore" />
-                            <img src="/get_on_microsoft.png" alt="get_on_microsoft" />
+                            <img className={styles.cta1} src="/get_on_playstore.png" alt="get_on_playstore" />
+                            <img className={styles.cta2} src="/get_on_microsoft.png" alt="get_on_microsoft" />
                         </div>
                     </div>
                 </div>
