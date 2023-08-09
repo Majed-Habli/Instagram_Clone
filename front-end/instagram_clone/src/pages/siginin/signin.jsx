@@ -6,6 +6,10 @@ const Signin = () =>{
     const [validator, setValidator] = useState('');
     const [password, setPassword] = useState('');
 
+    const register = () =>{
+        window.location.href = '/signup';
+    }
+
     return (
         <div className={styles.container}>
             <div className={styles.container_body}>
@@ -38,7 +42,7 @@ const Signin = () =>{
                             <div className={styles.forget_password}>Forgot password</div>
                         </div>
                     </div>
-                    <div className={styles.bottom_container}>Don't have an account? <span>Sign up</span></div>
+                    <div className={styles.bottom_container}>Don't have an account? <span onClick={register}>Sign up</span></div>
                     <div className={styles.cta}>
                         <div>Get the app</div>
                         <div className={styles.cta_images}>
