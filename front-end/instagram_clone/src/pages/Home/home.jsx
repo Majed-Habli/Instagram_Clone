@@ -7,6 +7,9 @@ const Home = () => {
             <div className={styles.navbar}>
                 <Navbar></Navbar>
             </div>
+            <div className={styles.body}>
+                
+            </div>
         </div>
     )
 }
