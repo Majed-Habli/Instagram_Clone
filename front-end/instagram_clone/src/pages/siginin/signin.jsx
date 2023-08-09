@@ -12,7 +12,9 @@ const Signin = () =>{
                     </div>
                 </div>
                 <div className={styles.body_right}>
-                    //component
+                    {/* //component */}
+                    <div className={styles.top_container}></div>
+                    <div className={styles.bottom_container}></div>
                 </div>
             </div>
         </div>
