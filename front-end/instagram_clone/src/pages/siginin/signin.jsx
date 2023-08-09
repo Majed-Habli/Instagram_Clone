@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from './signin.module.css';
 
 const Signin = () =>{
+    const [validator, setValidator] = useState('');
+    const [password, setPassword] = useState('');
+
     return (
         <div className={styles.container}>
             <div className={styles.container_body}>
@@ -12,8 +15,16 @@ const Signin = () =>{
                     </div>
                 </div>
                 <div className={styles.body_right}>
-                    {/* //component */}
-                    <div className={styles.top_container}></div>
+                    <div className={styles.top_container}>
+                        <div className={styles.logo_container}>
+                            <img src="/logo.png" alt="logo" />
+                        </div>
+                        <div className={styles.input_container}>
+                            <input value={validator} onChange={ e=> setValidator(e.target.value) }/>
+                            <input type="password" value={password} onChange={ e=> setPassword(e.target.value) }/>
+                            <button>Log in</button>
+                        </div>
+                    </div>
                     <div className={styles.bottom_container}></div>
                 </div>
             </div>
