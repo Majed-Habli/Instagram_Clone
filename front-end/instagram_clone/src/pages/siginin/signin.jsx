@@ -29,6 +29,13 @@ const Signin = () =>{
                             <div>or</div>
                             <div className={styles.line}></div>
                         </div>
+                        <div className={styles.interactables}>
+                            <div className={styles.facebook}>
+                                <img src="/fb_logo.png" alt="facebook_logo" />
+                                <div>Log in with Facebook</div>
+                            </div>
+                            <div className={styles.forget_password}>Forgot password</div>
+                        </div>
                     </div>
                     <div className={styles.bottom_container}></div>
                 </div>
