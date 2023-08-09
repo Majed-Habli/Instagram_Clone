@@ -37,7 +37,14 @@ const Signin = () =>{
                             <div className={styles.forget_password}>Forgot password</div>
                         </div>
                     </div>
-                    <div className={styles.bottom_container}></div>
+                    <div className={styles.bottom_container}>Don't have an account? <span>Sign up</span></div>
+                    <div className={styles.cta}>
+                        <div>Get the app</div>
+                        <div className={styles.cta_images}>
+                            <img src="/get_on_playstore.png" alt="get_on_playstore" />
+                            <img src="/get_on_microsoft.png" alt="get_on_microsoft" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

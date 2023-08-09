@@ -29,6 +29,9 @@
     width: 400px;
     height: 580px;
     padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
 }
 
 .image_container{
@@ -140,4 +143,17 @@
     color: #0037C1;
     font-weight: 500;
     cursor: pointer;
+}
+
+.bottom_container{
+    width: 100%;
+    padding: 1.3rem 0;
+    text-align: center;
+    border: 1px solid #dbdbdb;
+    font-size: 14px;
+}
+
+.bottom_container span{
+    color: #4CB5F9;
+    font-weight: 500;
 }
