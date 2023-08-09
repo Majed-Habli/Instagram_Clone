@@ -8,6 +8,7 @@
     width: 100%;
     height: 158px;
     padding: 0 1rem;
+    z-index: 1;
 }
 
 .line_one{

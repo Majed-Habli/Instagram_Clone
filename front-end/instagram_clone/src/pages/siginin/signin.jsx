@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from './signin.module.css';
+import Footer from "../../components/shared/footer/footer";
 
 const Signin = () =>{
     const [validator, setValidator] = useState('');
@@ -46,6 +47,9 @@ const Signin = () =>{
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className={styles.footer}>
+                <Footer/>
             </div>
         </div>
     )

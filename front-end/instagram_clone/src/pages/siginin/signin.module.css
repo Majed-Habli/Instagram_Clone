@@ -7,7 +7,6 @@
 .container{
     width: 100%;
     height: 100vh;
-    padding: 0 16.5rem;
 }
 
 .container_body{
@@ -184,4 +183,9 @@
     width: 110px;
     height: 40px;
     cursor: pointer;
+}
+
+.footer{
+    width: 100%;
+    height: 138px;
 }
