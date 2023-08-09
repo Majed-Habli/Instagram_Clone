@@ -20,8 +20,8 @@ const Signin = () =>{
                             <img src="/logo.png" alt="logo" />
                         </div>
                         <div className={styles.input_container}>
-                            <input value={validator} onChange={ e=> setValidator(e.target.value) }/>
-                            <input type="password" value={password} onChange={ e=> setPassword(e.target.value) }/>
+                            <input type="text" placeholder="Email" value={validator} onChange={ e=> setValidator(e.target.value) }/>
+                            <input type="password" placeholder="Password" value={password} onChange={ e=> setPassword(e.target.value) }/>
                             <button>Log in</button>
                         </div>
                     </div>
