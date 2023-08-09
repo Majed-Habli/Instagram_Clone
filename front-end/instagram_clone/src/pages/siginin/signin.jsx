@@ -11,7 +11,9 @@ const Signin = () =>{
                         <img src="/rightIphoneImage.png" alt="right_iphone_image" />
                     </div>
                 </div>
-                <div className={styles.body_right}></div>
+                <div className={styles.body_right}>
+                    //component
+                </div>
             </div>
         </div>
     )
