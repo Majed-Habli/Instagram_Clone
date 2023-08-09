@@ -7,8 +7,18 @@
 .container{
     width: 270px;
     height: 100%;
-    /* background-color: aqua; */
-    border-right: 1px solid #737373;
+    border-right: 1px solid #DBDBDB;
+}
+
+.nav_header{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    padding: 2rem 1.5rem;
+}
+
+.nav_header img{
+    width: 130px;
 }
 
 .nav_body{
@@ -22,17 +32,19 @@
 .nav_link{
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     column-gap: 12px;
     font-weight: 600;
-    padding: 5px 16px;
+    padding: 6px 5px;
+    border-radius: 8px;
 }
 
 .nav_link img{
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
 
 }
 
 .nav_link:hover{
-    background-color: #737373;
+    background-color: #F7F7F7;
 }
