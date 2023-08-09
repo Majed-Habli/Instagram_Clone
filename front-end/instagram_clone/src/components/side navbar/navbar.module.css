@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 270px;
+    height: 100%;
+    /* background-color: aqua; */
+    border-right: 1px solid #737373;
+}
+
+.nav_body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 1rem;
+}
+
+.nav_link{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    font-weight: 600;
+    padding: 5px 16px;
+}
+
+.nav_link img{
+    width: 40px;
+    height: 40px;
+
+}
+
+.nav_link:hover{
+    background-color: #737373;
+}

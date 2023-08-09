@@ -1,4 +1,5 @@
 import React from "react";
+import styles from './navbar.module.css';
 
 export const Navbar = () =>{
     return (
@@ -24,7 +25,7 @@ export const Navbar = () =>{
                     <div>Reels</div>
                 </div>
                 <div className={styles.nav_link}>
-                    <img src="/Messnger.png" alt="home icon" />
+                    <img src="/Messenger.png" alt="home icon" />
                     <div>Messages</div>
                 </div>
                 <div className={styles.nav_link}>
