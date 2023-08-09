@@ -24,6 +24,11 @@ const Signin = () =>{
                             <input type="password" placeholder="Password" value={password} onChange={ e=> setPassword(e.target.value) }/>
                             <button>Log in</button>
                         </div>
+                        <div className={styles.seperator}>
+                            <div className={styles.line}></div>
+                            <div>or</div>
+                            <div className={styles.line}></div>
+                        </div>
                     </div>
                     <div className={styles.bottom_container}></div>
                 </div>
