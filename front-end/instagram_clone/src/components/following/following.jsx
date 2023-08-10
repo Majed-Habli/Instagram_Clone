@@ -3,6 +3,8 @@ import styles from './following.module.css';
 import { Card } from "../shared/user card/userCard";
 
 export const Following = () =>{
+    const buttonText = "Unfollow";
+    
     return (
         <div className={styles.container}>
             <div className={styles.container_header}>
@@ -18,7 +20,7 @@ export const Following = () =>{
                 People you follow
             </div>
             <div className={styles.following_list}>
-                <Card/>
+                <Card button_title={buttonText}/>
             </div>
         </div>
     )
