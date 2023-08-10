@@ -11,7 +11,7 @@ export const Card = () =>{
                 <div className={styles.user_name}>Majed Habli</div>
                 <div>Following</div>
             </div>
-            
+            <div className={styles.button_container}>Unfollow</div>
         </div>
     )
 }
