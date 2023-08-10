@@ -8,7 +8,7 @@ export const Post = () =>{
                 <div className={styles.profile}>
                     <img src="/Account.png" alt="user image" />
                 </div>
-                <div className={styles.user_details}>User name + date</div>
+                <div className={styles.user_details}>Majed Habli . 6h</div>
                 <div className={styles.settings}>
                     <img src="/settings.png" alt="settings image" />
                 </div>
