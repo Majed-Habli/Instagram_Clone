@@ -14,4 +14,5 @@ class Like extends Model
         'post_id',
         'like_count'
     ];
+
 }

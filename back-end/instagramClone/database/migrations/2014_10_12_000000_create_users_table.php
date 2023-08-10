@@ -26,6 +26,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('user_one_id');
             $table->unsignedBigInteger('user_two_id');
+            // $table->timestamps();
         });
 
         Schema::create('posts', function (Blueprint $table) {

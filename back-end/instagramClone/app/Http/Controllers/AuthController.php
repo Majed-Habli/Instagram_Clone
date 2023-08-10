@@ -31,13 +31,10 @@ class AuthController extends Controller
         }
 
         $user = Auth::user();
+        $user->token = $token;
         return response()->json([
                 'status' => 'success',
-                'user' => $user,
-                'authorisation' => [
-                    'token' => $token,
-                    'type' => 'bearer',
-                ]
+                'data' => $user
             ]);
 
     }
@@ -45,12 +42,12 @@ class AuthController extends Controller
     public function register(Request $request){
         $request->validate([
             'name' => 'required|string|max:255',
+            'user_name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6',
         ]);
 
         $user = new User;
-        $user->user_type_id = 2;
         $user->name = $request->name;
         $user->user_name = $request->user_name;
         $user->email = $request->email;
