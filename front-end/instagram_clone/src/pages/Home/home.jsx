@@ -2,6 +2,7 @@ import React from "react";
 import styles from './home.module.css';
 import { Navbar } from "../../components/side navbar/navbar";
 import { Post } from "../../components/post/post";
+import { Following } from "../../components/following/following";
 
 const Home = () => {
     return (
@@ -15,7 +16,9 @@ const Home = () => {
                     <Post/>
                     <Post/>
                 </div>
-                <div className={styles.offer}>hello</div>
+                <div className={styles.offer}>
+                    <Following/>
+                </div>
             </div>
         </div>
     )
