@@ -10,7 +10,7 @@ export const Popup = ({isPressed}) =>{
     return (
         <div className={styles.container}>
             <div className={styles.popup_container}>
-                <img src="/x.png" alt="close image" onclick={hideModel}/>
+                <img src="/x.png" alt="close image" onClick={hideModel}/>
             </div>
         </div>
     )

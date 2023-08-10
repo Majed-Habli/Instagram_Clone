@@ -52,9 +52,11 @@ export const Navbar = () =>{
                     <div>More</div>
                 </div>
             </div>
-            {/* <div className={styles.popup_body}>
-                {showPopUp && <Popup isPressed={setShowPopUp}/>}
-            </div> */}
+            <div className={styles.popup_body}>
+                <div className={styles.popup}>
+                    {showPopUp && <Popup isPressed={setShowPopUp}/>}
+                </div>
+            </div>
         </div>
     )
 }
