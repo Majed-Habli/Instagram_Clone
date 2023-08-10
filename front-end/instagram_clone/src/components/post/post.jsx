@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './post.module.css';
 
-const Post = () =>{
+export const Post = () =>{
     return(
         <div className={styles.container}>
             <div className={styles.post_header}>
