@@ -5,6 +5,8 @@
     top: 0;
     padding-right: 7rem;
     display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
     align-items: center;
     justify-content: center;
     background-color: #595959;
@@ -63,4 +65,18 @@
     justify-content: center;
     background-color: #0095F6;
     border-radius: 8px;
+}
+
+.close_button{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 4rem;
+    margin-top: -3rem;
+}
+
+.close_button img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
 }

@@ -9,8 +9,10 @@ export const Popup = ({isPressed}) =>{
 
     return (
         <div className={styles.container}>
+            <div className={styles.close_button}>
+                <img src="/x.png" alt="close image" onClick={hideModel}/>
+            </div>
             <div className={styles.popup_container}>
-                {/* <img src="/x.png" alt="close image" onClick={hideModel}/> */}
                 <div className={styles.popup_header}>
                     Create new post
                 </div>
