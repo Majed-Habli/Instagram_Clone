@@ -24,20 +24,19 @@
     position: absolute;
     display: flex;
     column-gap: 8rem;
-    background-color: aqua;
 }
 
 .post{
-    /* flex: 1; */
-    padding: 0 6rem;
-    /* position: absolute; */
-    background-color: #ce5555;
+    width: 700px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    padding: 4rem 7rem 2rem 7rem;
 }
 
 .offer{
     width: 100px;
     height: 100%;
-    /* position: absolute; */
-    /* right: 0; */
     background-color: #ce5555;
 }

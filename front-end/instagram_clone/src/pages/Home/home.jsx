@@ -12,6 +12,8 @@ const Home = () => {
             <div className={styles.container_body}>
                 <div className={styles.post}>
                     <Post/>
+                    <Post/>
+                    <Post/>
                 </div>
                 <div className={styles.offer}>hello</div>
             </div>
