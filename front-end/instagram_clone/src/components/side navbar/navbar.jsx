@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from './navbar.module.css';
+import { Popup } from "../upload post/popup";
 
 export const Navbar = () =>{
+    const [showPopUp, setShowPopUp] = useState(false);
+
+    const showPopup = () =>{
+        setShowPopUp(true);
+        console.log(showPopUp)
+    }
     return (
         <div className={styles.container}>
             <div className={styles.nav_header}>
@@ -32,7 +39,7 @@ export const Navbar = () =>{
                     <img src="/Heart.png" alt="home icon" />
                     <div>Notifications</div>
                 </div>
-                <div className={styles.nav_link}>
+                <div className={styles.nav_link} onClick={showPopup}>
                     <img src="/AddNew.png" alt="home icon" />
                     <div>Create</div>
                 </div>
@@ -45,6 +52,9 @@ export const Navbar = () =>{
                     <div>More</div>
                 </div>
             </div>
+            {/* <div className={styles.popup_body}>
+                {showPopUp && <Popup isPressed={setShowPopUp}/>}
+            </div> */}
         </div>
     )
 }
