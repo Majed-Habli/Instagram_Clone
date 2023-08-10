@@ -9,10 +9,12 @@ const Home = () => {
             <div className={styles.navbar}>
                 <Navbar/>
             </div>
-            <div className={styles.post}>
-                <Post/>
+            <div className={styles.container_body}>
+                <div className={styles.post}>
+                    <Post/>
+                </div>
+                <div className={styles.offer}>hello</div>
             </div>
-            <div className={styles.offer}>hello</div>
         </div>
     )
 }
