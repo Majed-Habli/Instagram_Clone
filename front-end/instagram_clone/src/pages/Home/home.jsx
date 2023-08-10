@@ -5,11 +5,11 @@ import { Post } from "../../components/post/post";
 
 const Home = () => {
     return (
-        <div className={styles.conatiner}>
+        <div className={styles.container}>
             <div className={styles.navbar}>
-                <Navbar></Navbar>
+                <Navbar/>
             </div>
-            <div className={styles.body}>
+            <div className={styles.post}>
                 <Post/>
             </div>
             <div className={styles.offer}>hello</div>
