@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from './navbar.module.css';
 import { Popup } from "../upload post/popup";
+import { Searchbar } from "../searchbar/search";
 
 export const Navbar = () =>{
     const [showPopUp, setShowPopUp] = useState(false);
@@ -56,6 +57,9 @@ export const Navbar = () =>{
                 <div className={styles.popup}>
                     {showPopUp && <Popup isPressed={setShowPopUp}/>}
                 </div>
+            </div>
+            <div className={styles.searchbar}>
+                <Searchbar/>
             </div>
         </div>
     )

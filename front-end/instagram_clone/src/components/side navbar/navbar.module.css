@@ -59,3 +59,9 @@
     z-index: 2;
     /* change width here to adjust the popup */
 }
+
+.searchbar{
+    width: 400px;
+    height: 100%;
+    position: fixed;
+}

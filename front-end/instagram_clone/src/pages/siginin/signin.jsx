@@ -10,6 +10,37 @@ const Signin = () =>{
         window.location.href = '/signup';
     }
 
+    const login = async () =>{
+        const body = {
+            email: validator,
+            password: password
+        }
+        const parsebody = JSON.stringify(body);
+        try{
+            const response = await fetch ("http://localhost:8000/api/login",{
+                method:"POST",
+                headers:{
+                    'Content-Type':'application/json'
+                },
+                body: parsebody
+            });
+            const data = await response.json();
+            if (data.status === "success"){
+                console.log("logged in");
+                const token = data.authorisation.token;
+
+                localStorage.setItem('token', token);
+                window.location.href = "/home";
+
+            }else{
+                console.log("failed to login")
+            }
+        }
+        catch(error){
+            console.log('There was an error', error);
+        }
+    }
+
     return (
         <div className={styles.container}>
             <div className={styles.container_body}>
@@ -27,7 +58,7 @@ const Signin = () =>{
                         <div className={styles.input_container}>
                             <input type="text" placeholder="Email" value={validator} onChange={ e=> setValidator(e.target.value) }/>
                             <input type="password" placeholder="Password" value={password} onChange={ e=> setPassword(e.target.value) }/>
-                            <button>Log in</button>
+                            <button onClick={login}>Log in</button>
                         </div>
                         <div className={styles.seperator}>
                             <div className={styles.line}></div>

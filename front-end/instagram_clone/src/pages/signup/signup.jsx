@@ -26,14 +26,14 @@ const Signup = () =>{
             });
             const data = await response.json();
             if (data.status === "success"){
-                console.log("logged in");
+                console.log("registered in");
                 const token = data.authorisation.token;
 
                 localStorage.setItem('token', token);
                 window.location.href = "/home";
 
             }else{
-                console.log("failed to login")
+                console.log("failed to register")
             }
         }
         catch(error){
